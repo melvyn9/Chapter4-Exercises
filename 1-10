@@ -1,0 +1,136 @@
+#1
+import turtle
+
+def draw_squares(t,sz):
+    for i in range (4):
+        t.forward(sz)
+        t.left(90)
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+wn.title("Drawing 4 Squares")
+
+Melvyn = turtle.Turtle()
+
+for i in range(15):
+    draw_squares(Melvyn,50)
+    wn.mainloop()
+    
+#2
+import turtle
+
+def draw_multi_square(t, sz):
+    for i in ["red", "purple", "hotpink", "blue"]:
+        t.color(i)
+        t.forward(size)
+        t.left(90)
+    t.penup()
+    t.right(90)
+    t.forward(10)
+    t.right(90)
+    t.forward(10)
+    t.right(180)
+    t.pendown()
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+
+melvyn1 = turtle.Turtle()
+melvyn1.pensize(2)
+
+size = 20
+for i in range(5):
+    draw_multi_square(melvyn1, size)
+    size = size + 20
+
+wn.mainloop()
+
+#3
+import turtle
+
+def draw_poly(t, n, sz):
+    t.forward(100)
+    t.left(45)
+
+wn = turtle.Screen()
+wn.bgcolor("LightGreen")
+
+melvyn = turtle.Turtle()
+melvyn.pensize(2)
+
+for i in range(8):
+    draw_poly(melvyn, 8, 100)
+  
+#4
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+melvyn1 = turtle.Turtle()
+melvyn1.pensize(2)
+
+def draw_square(t,sz):
+    for i in range(4):
+        t.forward(100)
+        t.left(90)
+
+for i in range(90):
+    melvyn1.speed(20)
+    draw_square(melvyn1, 90)
+    melvyn1.left(18)
+wn.mainloop()
+
+#5
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+melvyn1 = turtle.Turtle()
+melvyn1.pensize(2)
+melvyn1.speed(99999999)
+sz = 5
+mult = 1
+def draw_spiral(t,sz,mult):
+    for i in range(0,100):
+        melvyn1.forward(sz*i)
+        melvyn1.left(90)
+
+
+draw_spiral(melvyn1,sz,mult)
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+melvyn1 = turtle.Turtle()
+melvyn1.pensize(2)
+melvyn1.speed(99999999)
+sz = 5
+mult = 1
+
+def draw_spiral(t,sz,mult):
+    for i in range(0,100):
+        melvyn1.forward(sz*i)
+        melvyn1.left(91)
+
+
+draw_spiral(melvyn1,sz,mult)
+
+#6
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+melvyn1 = turtle.Turtle()
+melvyn1.pensize(2)
+melvyn1.speed(5)
+sz = 5
+
+def draw_poly(t, n, sz):
+    t.forward(100)
+    t.left(45)
+
+def equilateral(t,sz):
+    draw_poly(melvyn1,sz,5)
+    for i in range(3):
+        t.forward(100)
+        t.left(120)
+
+equilateral(melvyn1,sz)
+
+#7
