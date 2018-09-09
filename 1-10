@@ -134,3 +134,60 @@ def equilateral(t,sz):
 equilateral(melvyn1,sz)
 
 #7
+def sum_to(n):
+    end = 0
+    while n > 0:
+        end+=n
+        n=n-1
+    return(end)
+
+print(sum_to(10))
+
+#8
+pi = 22/7
+
+def areaofcircle(r):
+    return pi*r**2
+
+radius = int(input("What is the radius of your circle"))
+
+print(areaofcircle(radius))
+
+#9
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+melvyn = turtle.Turtle()
+melvyn.pensize(2)
+melvyn.speed(5)
+sz = 5
+
+def drawstar(t,sz):
+    for i in range(5):
+        t.forward(100)
+        t.left(144)
+
+drawstar(melvyn,sz)
+
+#10
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+melvyn = turtle.Turtle()
+melvyn.pensize(2)
+melvyn.speed(5)
+sz = 5
+
+def drawstar(t,sz):
+    for i in range(5):
+        t.color("pink")
+        t.forward(100)
+        t.left(144)
+
+for i in range(5):
+    drawstar(melvyn,sz)
+    melvyn.penup()
+    melvyn.left(144)
+    melvyn.forward(350)
+    melvyn.pendown()
+
